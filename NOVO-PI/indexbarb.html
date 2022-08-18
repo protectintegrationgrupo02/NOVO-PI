@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="stylebarb.css">
+    <link rel="preload" href="stylebarb.css">
+    <script src="https://kit.fontawesome.com/22f6af0e5b.js" crossorigin="anonymous"></script>
+    <title>Barbearia</title>
+</head>
+<body>
+    <header>
+        <header id="header" >
+            <a id="logo" href="">Logo</a>
+            <nav id="nav">
+           
+              <ul id="menu" role="menu">
+                <li><a  href="#home">Home</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a  href="#"> <button id="cadastro"  onclick="openModal('dv-modal')">Cadastre-se</button></a></li>
+                <li><a href="#"> <button id="entrar"  onclick="openModal01('dv-modal01')">Entrar</button></a></li>  
+                
+              </ul>
+            </nav>
+          </header>
+          </header>
+    </header>
+   <!--MODAIS-->
+    
+    <!--MODAIS--> 
+    <section class="section"  id="home">
+      
+        <pre class="title-logs "  >Seu cabelo é a moldura do seu rosto, 
+            cuide bem dele e apareça!</pre> 
+        <div class="imagem-logs">
+          <img src="imag/logs01.png" alt="">
+        </div>
+        <p class="sub">Bora agendar seu horário?</p>
+        
+    </section>
+    <section class="section" id="quem-somos">
+    <p  >QUEM SOMOS</p>
+    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Quibusdam tempora quam quos eligendi ad. 
+Quae esse molestias laudantium quidem libero amet, iure pariatur corrupti,
+fugit officia assumenda id commodi numquam.
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Quibusdam tempora quam quos eligendi ad. 
+Quae esse molestias laudantium quidem libero amet, iure pariatur corrupti,
+fugit officia assumenda id commodi numquam.
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Quibusdam tempora quam quos eligendi ad. 
+Quae esse molestias laudantium quidem libero amet, iure pariatur corrupti,
+fugit officia assumenda id commodi numquam.</pre>
+    </section>
+    <section class="section" id="servicos">
+      <p>SERVIÇOS</p>
+      <div class="container">
+        <div class="cards">
+  
+            <div class="card" id="card-1">
+              <h1 class="card-title">Cabelo</h1>
+              <h1 class="card-title">Máquina</h1>
+              <h2 class="card-price" id="item-mak"> R$30 <span> / 00</span> </h2>
+              <h1 class="card-title">Máquina + Tesoura</h1>
+              <h2 class="card-price" id="item-mak"> R$60 <span> / 00</span> </h2>
+              <ul class="card-plan">
+                <li>Lavagem de Cabelo</li>
+              </ul>
+              
+            </div>
+            <div class="card" id="card-1">
+              <h1 class="card-title">Barba</h1>
+              <h2 class="card-price" id="item-mak"> R$30 <span> / 00</span> </h2>
+              <ul class="card-plan">
+                  <li> Corte</li>
+                  <li>Lavagem</li>
+                  
+              </ul>
+              
+            </div>
+            <div class="card" id="card-1">
+              <h1 class="card-title">Sobrancelha</h1>
+              <h2 class="card-price" id="item-mak"> R$20 <span> / 00</span> </h2>
+              <ul class="card-plan">
+                  <li> Reparo</li>
+                  
+              </ul>            
+            </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="galeria">
+      <p >GALERIA</p>
+      <div class="wrapper">
+        <div class="gallery">
+          <div class="image"><span><img src="imag/imagenserv.jpeg" alt=""></span></div>
+          <div class="image"><span><img src="imag/fund33.jpg" alt=""></span></div>
+          <div class="image"><span><img src="imag/fund09.jpg" alt=""></span></div>
+          <div class="image"><span><img src="imag/fund07.jpg" alt=""></span></div>
+          <div class="image"><span><img src="imag/mage01.jpg" alt=""></span></div>
+          <div class="image"><span><img src="imag/cliente-de-preparação-barbeiro-profissional-para-corte-cabelo-na-barbearia-moda-do-estilo-autocuidado-da-beleza-e-masculina-231458926.jpg" alt=""></span></div>
+        </div>
+      </div>
+      <div class="preview-box">
+        <div class="details">
+          <span class="title"> <p class="current-img"></p><p class="total-img"></p></span>
+          <span class="icon fa-solid fa-xmark">X</span>
+        </div>
+        <div class="image-box">
+          <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+          <div class="slide next"><i class="fas fa-angle-right"></i></div>
+          <img src="" alt="">
+        </div>
+      </div>
+      <div class="shadow"></div>
+      
+
+
+    </section>
+    
+   <!-- <div id="dv-modal" class="modal">
+      <div class="modal-content">
+          <div class="modal-header">
+            <button   onclick="closeModal('dv-modal')">X</button>
+          </div>
+          <div class="modal-body">
+        <p class="crie-conta">Crie sua Conta</p>
+         <div class="nome">
+              <input  type="text" placeholder="Nome completo"required>            
+          </div>
+          <div class="celular">   
+                  
+                  <input class="telefone" type="tel" name="celular" placeholder="Seu Celular"required>
+              </div>
+             <div class="cpf">
+                  
+                  <input  type="CPF" placeholder="Seu CPF" required>
+              </div>             
+          
+           <div class="email">
+              <input  type="email"  placeholder="E-mail"  required>      
+          </div>
+         <div class="senha01"> 
+                 
+                  <input placeholder="Senha"   type="password" required>
+         </div>
+              <div class="senha02">
+                  <input placeholder="Confirmar Senha"  type="password" required>            
+          </div>
+
+          <div class="btn-enviar">
+            <a href="#"> <button>Enviar</button></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <div id="dv-modal01" class="modal01">
+      <div class="modal01-content">
+          <div class="modal01-header">
+            <button   onclick="closeModal01('dv-modal01')">X</button>
+          </div>
+          <div class="modal01-body">
+        <p class="crie-conta">Login</p>
+         <div class="nome01">
+              <input  type="text" placeholder="E-mail ou Usuário"required>            
+          </div>
+       
+         <div class="senha03"> 
+                 
+                  <input placeholder="Senha"   type="password" required>
+         </div>
+         <label id="label" for="esquecer"  ><a href="/telainicial/recuperasenha" >  Esqueci a senha</a></label>
+              <div class="ou">       
+             <p>ou</p>
+             </div>
+             <div class="rede-social">
+              <ul>
+                  <li><img src="/imag/icons8-instagram-64.png" ></li>
+                  <li><img src="/imag/google-icon-4.png" ></li>
+               
+              </ul>
+          </div>
+
+          <div class="btn-entrar">
+            <a href="/telainicial/agenda"> <button>Entrar</button></a>
+          </div>
+        </div>
+    </div>-->
+    <script src="galeria.js"></script>
+    <script src="radio.js"></script>
+    <script src="telainicial.js"></script>
+</body>
+</html>
